@@ -2,8 +2,23 @@
 
 {% block title %}Contact{% endblock %}
 
+<!--Cabecera-->
+{% block background %}{% load static %}{% static 'core/img/contact-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Jhon Chavez</h1>
+<span class="subheading">Estudiante de ingenieria de sistemas</span>
+{% endblock %}
 
 {% block content %}
-<h2>Contacto</h2>
-<p>Este es mi contacto: jhonf.6520@gmail.com</p>
+<div class="col-lg-3 col-md-4 offset-lg-1">
+    <img class="img-fluid avatar" src="{% static 'core/img/contact-bg.jpg' %}" alt="">
+</div>
+<div class="col-lg-8 col-md-10 mx-auto">
+        <h2>Datos de contacto</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
+        <br>
+        <p><b>Teléfono:</b> +09 876 543 210</p>
+        <p><b>Honorarios:</b> 60€/h (precio base)</p>
+    </div>
 {% endblock %}

@@ -4,12 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
-pillow = "*"
 pylint = "*"
+django = "*"
+django-ckeditor = "*"
+pillow = "*"
 pylint-django = "*"
 pylint-celery = "*"
-django-ckeditor = "*"
 
 [dev-packages]
 

@@ -1,7 +1,15 @@
+<!--Plantilla dinamica-->
+<!--Utilizar los bloques para dinamizar la página-->
 {%extends 'core/base.html'%}
 
 {% block title %}Portada{% endblock %}
 
+{% block background %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Jhon Chavez</h1>
+<span class="subheading">Estudiante de ingenieria de sistemas</span>
+{% endblock %}
+
 {% block content %}
-<h2>Esto es la portada</h2>
 {% endblock %} 
