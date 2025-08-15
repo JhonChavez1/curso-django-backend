@@ -9,7 +9,7 @@
     <title>Jhon Chavez</title>
 
     <!-- Estilos y fuentes del template  -->
-    {% load static %}
+    {% load static %} <!--Caargar los archivos estáticos-->
     <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'core/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -62,7 +62,6 @@
     </header>
     <!-- Contenido -->
      <div class="container">
-      <div class="row">
       {% block content %}{% endblock %}   
       </div>  
     </div>
